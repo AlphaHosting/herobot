@@ -14,7 +14,7 @@ console.log('Bot Is Ready');
 client.on('message', message => {
   if (message.content === 'codes') {
 
-    const embed = new RichEmbed()
+    const embed = new Discord.RichEmbed()
       .setTitle('Alive Codes')
       .setColor(0xFF0000)
       .setThumbnail('https://media.discordapp.net/attachments/502934273695940621/502959639533453312/qrcode.png')
@@ -33,7 +33,7 @@ FGSDJI-4FSHJI-GHFSAD = 10$
 client.on('message', message => {
   if (message.content === 'codes') {
 
-    const embed = new RichEmbed()
+    const embed = new Discord.RichEmbed()
       .setTitle('Used Codes Codes')
       .setColor(0xFF0000)
       .setThumbnail('https://media.discordapp.net/attachments/502934273695940621/502959639533453312/qrcode.png')
