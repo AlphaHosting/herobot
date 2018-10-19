@@ -17,11 +17,8 @@ if(message.content === "codes")
     if (!message.guild) return;
     var code = new Discord.RichEmbed()
     .setColor('RANDOM')
-    .addField('HJHYJ-NDSSNS-KJSJX = 20$')
-    .addField('DG4AEF-GSDF8-I58SD = 20$')
-    .addField('JHGDFI-ASD57-65ADW = 15$')
-    .addField('SDIFHA-54DAS-48FGS = 15$')
-    .addField('Alive Codes')
+    .setTitle('Alive Codes')
+    .setDescription('HJHYJ-NDSSNS-KJSJX = 20$/n/DG4AEF-GSDF8-I58SD = 20$/n/JHGDFI-ASD57-65ADW = 15$/n/SDIFHA-54DAS-48FGS = 15$')
     .setFooter('Hero Host System')
     message.channel.sendEmbed(code)
 });
