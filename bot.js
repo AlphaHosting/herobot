@@ -11,17 +11,7 @@ client.on("ready", () => {
 console.log('Bot Is Ready');
 
 
-client.on('message', message => {
-if(message.content === "codes")
-    if(message.author.bot) return;
-    if (!message.guild) return;
-    var code = new Discord.RichEmbed()
-    .setColor('RANDOM')
-    .setTitle('Alive Codes')
-    .setDescription('HJHYJ-NDSSNS-KJSJX = 20$/n/DG4AEF-GSDF8-I58SD = 20$/n/JHGDFI-ASD57-65ADW = 15$/n/SDIFHA-54DAS-48FGS = 15$')
-    .setFooter('Hero Host System')
-    message.channel.sendEmbed(code)
-});
+
 
 
 client.on('message', message => {
