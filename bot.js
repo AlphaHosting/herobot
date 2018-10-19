@@ -11,7 +11,38 @@ client.on("ready", () => {
 console.log('Bot Is Ready');
 
 
+client.on('message', message => {
+  if (message.content === 'codes') {
 
+    const embed = new RichEmbed()
+      .setTitle('Alive Codes')
+      .setColor(0xFF0000)
+      .setThumbnail('https://media.discordapp.net/attachments/502934273695940621/502959639533453312/qrcode.png')
+      .setDescription(`
+ASFGS8-5DASFF-AWFD78 = 20$
+ADGHFS-5FHSE7-HFGD48 = 20$
+HFD98A-H4GD8Y-GRAD89 = 15$
+HUIWSF-48RGFR-HTFS48 = 15$
+IAJFDS-548B9S-FBSD56 = 10$
+FGSDJI-4FSHJI-GHFSAD = 10$
+ `)
+    message.channel.sendEmbed(embed);
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'codes') {
+
+    const embed = new RichEmbed()
+      .setTitle('Used Codes Codes')
+      .setColor(0xFF0000)
+      .setThumbnail('https://media.discordapp.net/attachments/502934273695940621/502959639533453312/qrcode.png')
+      .setDescription(`
+No Code Used
+ `)
+    message.channel.sendEmbed(embed);
+  }
+});
 
 
 client.on('message', message => {
