@@ -15,7 +15,7 @@ client.on('message', message => {
 if(message.content === "codes")
     if(message.author.bot) return;
     if (!message.guild) return;
-    var code = new Discord.RichEmbed();
+    var code = new Discord.RichEmbed()
     .setColor('RANDOM')
     .addField('HJHYJ-NDSSNS-KJSJX = 20$')
     .addField('DG4AEF-GSDF8-I58SD = 20$')
