@@ -61,13 +61,13 @@ msg.delete();
 
 client.on('message', message => {
     if(message.content === ".website")
-    message.channel.send('https://herohost.netlify.com')
+    message.channel.send('https://www.hero-host.com/')
 });
 
 
 client.on('message', message => {
     if(message.content === ".help")
-    message.channel.send('Hello If You Need Help You Can Type .new To Create A Ticket Or Contact Our Support In WEBSITE [ https://herohost.netlify.com/]')
+    message.channel.send('Hello If You Need Help You Can Type .new To Create A Ticket Or Contact Our Support In WEBSITE [ https://www.hero-host.com/]')
 });
 
 
