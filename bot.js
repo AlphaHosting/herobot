@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const prefix = ('.');
 
 client.on("ready", () => {
-    client.user.setActivity("Hero Host Bot");
+    client.user.setActivity("https://hero-host.com");
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
 });
 
