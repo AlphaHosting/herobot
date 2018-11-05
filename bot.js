@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const prefix = ('.');
 
 client.on("ready", () => {
-    client.user.setActivity("https://hero-host.com");
+    client.user.setActivity("Hero-Host System");
     console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
 });
 
@@ -61,7 +61,7 @@ msg.delete();
 
 client.on('message', message => {
     if(message.content === ".website")
-    message.channel.send('https://www.hero-host.com/')
+    message.channel.send('https://hero-host.com/')
 });
 
 
