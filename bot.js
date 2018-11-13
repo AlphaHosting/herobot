@@ -15,14 +15,14 @@ console.log('Bot Is Ready');
 client.on('message' , async (message) => {
     if (message.content.startsWith('.warn')) {
         if(!message.member.hasPermission('ADMINISTRATOR')) return;
-        let args = message.content.split(" ").join(" ").slice(3 + prefix.length);
+        let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
         if (!args) return message.reply('**You Need To Type A Reason To Warn This User**');
            let user = message.mentions.users.first() || message.author;
            var embed = new Discord.RichEmbed()
            .setColor('#c60505')
            .setTitle('HeroHost Warning Message ©')
            .addField('Reason', args)
-           .setFooter('warn by ${message.author.username}')
+           .setFooter('warn by' message.author.username, true)
                user.sendEmbed(embed)
         message.channel.send('User Have Been Warned :white_check_mark: ');
 
