@@ -24,6 +24,7 @@ client.on('message' , async (message) => {
            .addField('Reason', args)
            .setFooter('warn by ${message.author.username}')
                user.sendEmbed(embed)
+        message.channel.send('User Have Been Warned :white_check_mark: ');
 
     }
    });
