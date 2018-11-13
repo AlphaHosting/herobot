@@ -22,7 +22,7 @@ client.on('message' , async (message) => {
            .setColor('#c60505')
            .setTitle('HeroHost Warning Message ©')
            .addField('Reason', args)
-           .setFooter('warn by' message.author.username, true)
+           .setFooter('HeroHost')
                user.sendEmbed(embed)
         message.channel.send('User Have Been Warned :white_check_mark: ');
 
