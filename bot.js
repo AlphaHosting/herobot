@@ -18,7 +18,7 @@ client.on('message' , async (message) => {
         let args = message.content.split(" ").join(" ").slice(3 + prefix.length);
         if (!args) return message.reply('**You Need To Type A Reason To Warn This User**');
            let user = message.mentions.users.first() || message.author;
-           var embed = new Discord.RichEmbed
+           var embed = new Discord.RichEmbed()
            .setColor('#c60505')
            .Title('HeroHost Warning Message ©')
            .addField('Reason', args)
