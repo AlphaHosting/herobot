@@ -20,7 +20,7 @@ client.on('message' , async (message) => {
            let user = message.mentions.users.first() || message.author;
            var embed = new Discord.RichEmbed()
            .setColor('#c60505')
-           .Title('HeroHost Warning Message ©')
+           .setTitle('HeroHost Warning Message ©')
            .addField('Reason', args)
            .setFooter('warn by ${message.author.username}')
                user.sendEmbed(embed)
