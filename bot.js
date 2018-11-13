@@ -12,7 +12,20 @@ console.log('Bot Is Ready');
 
 
 
+client.on('message' , async (message) => {
+    if (message.content.startsWith('.warn')) {
+        if(!message.member.hasPermission('ADMINISTRATOR')) return;
+        let args = message.content.split(" ").join(" ").slice(3 + prefix.length);
+           let user = message.mentions.users.first() || message.author;
+           var embed = new Discord.RichEmbed
+           .setColor('#c60505')
+           .Title('HeroHost Warning Message ©')
+           .addField('Message', args)
+           .setFooter('warn by ${message.author.username}')
+               user.sendEmbed(embed)
 
+    }
+   });
 
 
 
