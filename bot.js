@@ -32,7 +32,7 @@ client.on('message' , async (message) => {
 
 let antihack = JSON.parse(fs.readFileSync('./antihack.json' , 'utf8'));//require antihack.json file
 client.on('message', message => {
-    if(message.content.startsWith(prefix + "toggleAntihack")) {
+    if(message.content.startsWith(prefix + "antihack")) {
         if(!message.channel.guild) return message.reply('**This Command Only For Servers**');
         if(!message.member.hasPermission('ADMINISTRATION')) return message.channel.send('**Sorry But You Dont Have Permission**' );
         if(!antihack[message.guild.id]) antihack[message.guild.id] = {
